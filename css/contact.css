@@ -1,0 +1,126 @@
+.contact-wrapper {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    margin-left: 100px;
+}
+
+.contact-heading {
+    font-size: 2.3rem;
+    padding: 0 50px;
+    text-align: center;
+    background: -webkit-linear-gradient(#b471be, #763a7e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Abril Fatface', 'Times New Roman', cursive;
+    font-weight: lighter;
+}
+
+.svg-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 100px;
+    height: auto;
+    padding-bottom: 200px;
+}
+
+svg {
+    margin: 0;
+    padding: 50px;
+    z-index: 1;
+}
+
+.contact-box {
+    opacity: 70%;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 2px 6px 10px #763a7e;
+}
+
+.contact-box img {
+    padding-right: 5px;
+}
+
+.contact-box p {
+    font-family: 'Abril Fatface', 'Times New Roman', cursive;
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+}
+
+.contact-box a {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    color: #763a7e;
+}
+
+.contact-box a:hover {
+    color: #000;
+    cursor: pointer;
+    font-size: 35px;
+    transition: font-size 1s ease-in-out;
+}
+
+@media (max-width:900px) {
+    .contact-wrapper {
+        margin-left: 0;
+        height: 1100px;
+    }
+
+    .contact-heading {
+        font-size: 2rem;
+        line-height: normal;
+        padding-top: 20px;
+    }
+
+    .svg-wrapper {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    svg {
+        padding: 0;
+        width: 80%;
+    }
+
+    .contact-box {
+        width: fit-content;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .contact-wrapper {
+        height: 900px;
+    }
+    
+    .contact-heading {
+        font-size: 1.3rem;
+        line-height: normal;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    svg {
+        height: 200px;
+        margin: 20px 0;
+    }
+
+    .contact-box {
+        box-shadow: none;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-box a {
+        width: 90%;
+        font-size: 1.3rem;
+        margin: 0;
+        padding: 0;
+    }
+}

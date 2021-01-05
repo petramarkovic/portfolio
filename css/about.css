@@ -1,0 +1,130 @@
+.main {
+    display: block;
+}
+
+.wrapper-about {
+    display: block;
+    padding-left: 100px;
+    margin: 0 auto;
+    height: auto;
+    width: 70%;
+}
+
+.wrapper-about svg {
+     margin: 0;
+}
+
+.h1-about {
+    font-size: 2.3rem;
+    text-align: center;
+    font-family: 'Abril Fatface', 'Times New Roman', cursive;
+    padding: 10px;
+    background: -webkit-linear-gradient(#b471be, #763a7e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+}
+
+.slide-about {
+    width: 90%;
+}
+
+.slide-about p {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    color: #616161;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    animation: fade;
+    animation-duration: 5s;
+}
+
+.slide-about img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    animation: fade;
+    animation-duration: 5s;
+}
+
+#slide2 img {
+    width: auto;
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#slide3 img {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#slide4 img {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 100%;}
+}
+
+
+@media (max-width: 900px){
+    .h1-about {
+        font-size: 1.5rem;
+        line-height: normal;
+    }
+    
+    .wrapper-about {
+        height: auto;
+        padding-left: 0;
+    }
+
+    .wrapper-about svg {
+        width: 100%;
+    }
+
+    .slide-about p {
+        font-size: 1rem;
+    }
+
+    #slide2 img {
+        width: 10%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #slide4 img {
+        width: auto;
+        padding-left: 30px;
+        display: inline-block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .h1-about {
+        font-size: 1.5rem;
+        line-height: normal;
+    }
+
+    .slide-about p {
+        font-size: 1rem;
+    }
+
+    #slide2 img {
+        width: 20px;
+    }
+}
